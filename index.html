@@ -4,24 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Quiz-Game</title>
+    <title>Fuja</title>
 </head>
 <body>
-    
-    <div class="conteudo-jogo">
-        <section class="questionario">
-          <div class="conteudo">
-            <span class="progresso"></span>
-            <span class="pergunta"></span>
-            <div class="respostas"></div>
+    <div class="gameArea">
+      <div class="gameBox">
+        <div class="menu">
+          <div class="container">
+            <p>Siga as instruções para sobreviver! Eles estão chegando, não temos muito tempo!</p>
+            <div class="areaBtnIniciar">
+              <button id="btnIniciar">Iniciar</button>
+            </div>
+            
+          </div>   
+        </div>
+        <div class="conteudo">
+          <div class="progresso"></div>
+          <div class="pergunta"></div>
+            <div class="respostas">
+              <!-- Botões serão inseridos aqui via JS -->
+            </div>
+          <div class="areaTimer">
+            <div class="barra-tempo">
+              <div class="progresso-tempo"></div>
+            </div>  
           </div>
-    
-          <div class="fim">
-            <span></span>
-           
-          </div>
-        </section>
+        </div>
+        
+        
+
+        <div class="fim" style="display: none;">
+          <span></span>
+          <button onclick="reiniciar()">Tentar novamente</button>
+        </div>
       </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

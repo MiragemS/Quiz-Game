@@ -1,9 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: url("img/indexBg.jpg");
     background-size: cover;
 }
+
+.gameBox{
+    width: 40vw;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(222, 15, 15, 0.726);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+    border: 1px solid rgba(0, 0, 0, 0.39);
+}
+
+.areaBtnIniciar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+}
+
+.areaBtnIniciar button{
+  width: 8vw;
+  height: 6vh;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.areaBtnIniciar button:hover{
+  background-color: #e63e3e;
+}
+
+.menu{
+  color: white;
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Press Start 2P";
+}
+
+.container{
+  width: 30vw;
+}
+
+.container p{
+  padding-bottom: 8vh;
+  margin-left: 2vw;
+}
+
+.conteudo{
+  display: none;
+}
+
+.pergunta {
+    font-size: 1.5rem;
+    font-family: "Press Start 2P";
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .respostas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8vh;
+    align-items: center;
+  }
+  
+  .botao-resposta {
+    width: 8vw;
+    height: 6vh;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .botao-resposta:hover {
+    background-color: #e63e3e;
+  }
+  
+  .progresso {
+    color: #fff;
+    font-size: 1rem;
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .fim {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .fim span{
+    font-size: 0.85rem;
+    font-family: "Press Start 2P";
+    color: #fff;
+    margin-bottom: 8vw;
+}
+
+.fim button{
+    border: none;
+    border-radius: 8px;
+    width: 12vw;
+    height: 6vh;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.fim button:hover{
+  background-color: #e63e3e;
+}
+
+.areaTimer{
+  height: 18vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barra-tempo {
+  position: relative;
+  width: 50%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+  
+.progresso-tempo {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 72, 72);
+  transition: width 0.1s linear;
+}  
+
+
