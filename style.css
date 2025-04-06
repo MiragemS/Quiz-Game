@@ -17,6 +17,21 @@ body{
     background-size: cover;
 }
 
+.title{
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8vh;
+}
+
+.title p{
+  color: white;
+  text-shadow: 3px 0px 15px rgba(223,232,26,1);
+  font-family: "Press Start 2P";
+  font-size: 2rem;
+}
+
 .gameBox{
     width: 40vw;
     height: 60vh;
