@@ -132,7 +132,7 @@ const menu = document.querySelector(".menu");
 // PARTE 3: Variáveis para controle do jogo
 let acertos = 0; // Contador de acertos
 let indiceAtual = direcaoAleatoria(acertos); // Índice da pergunta atual
-let tempoLimite = 1.8;
+let tempoLimite = 1.6;
 let timer;
 
 function direcaoAleatoria(acertos){
